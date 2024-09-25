@@ -6,6 +6,8 @@ import Formrow from './components/Formrow'
 import Footer from './components/Footer'
 import PackageGallery from './components/PackageCard'
 import ServicesSection from './components/Service'
+import Gallery from './components/Gallery';
+import AboutUs from './components/Aboutus';
 function App() {
   return (
   <>
@@ -14,6 +16,8 @@ function App() {
   <Formrow/>
   <PackageGallery/>
   <ServicesSection/>
+  <Gallery/>
+  <AboutUs/>
   <Footer/>
   </>
   );
