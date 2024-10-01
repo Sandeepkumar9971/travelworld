@@ -68,7 +68,7 @@ const RegisterModal = ({ onClose,setIsLoginModalOpen }) => {
               name="fullName"
               value={formData.fullName}
               onChange={handleInputChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md"
+              className="w-full px-4 py-2 border text-black border-gray-300 rounded-md"
             />
             {errors.fullName && <p className="text-red-500">{errors.fullName}</p>}
           </div>
@@ -80,7 +80,7 @@ const RegisterModal = ({ onClose,setIsLoginModalOpen }) => {
               name="contact"
               value={formData.contact}
               onChange={handleInputChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md"
+              className="w-full px-4 text-black py-2 border border-gray-300 rounded-md"
             />
             {errors.contact && <p className="text-red-500">{errors.contact}</p>}
           </div>
@@ -92,7 +92,7 @@ const RegisterModal = ({ onClose,setIsLoginModalOpen }) => {
               name="dateOfBirth"
               value={formData.dateOfBirth}
               onChange={handleInputChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md"
+              className="w-full px-4 py-2 border text-black border-gray-300 rounded-md"
             />
             {errors.dateOfBirth && (
               <p className="text-red-500">{errors.dateOfBirth}</p>
@@ -106,7 +106,7 @@ const RegisterModal = ({ onClose,setIsLoginModalOpen }) => {
               name="email"
               value={formData.email}
               onChange={handleInputChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md"
+              className="w-full px-4 py-2 text-black border border-gray-300 rounded-md"
             />
             {errors.email && <p className="text-red-500">{errors.email}</p>}
           </div>
@@ -118,7 +118,7 @@ const RegisterModal = ({ onClose,setIsLoginModalOpen }) => {
               name="password"
               value={formData.password}
               onChange={handleInputChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md"
+              className="w-full px-4 py-2 text-black border border-gray-300 rounded-md"
             />
             {errors.password && <p className="text-red-500">{errors.password}</p>}
           </div>
@@ -129,7 +129,7 @@ const RegisterModal = ({ onClose,setIsLoginModalOpen }) => {
               name="gender"
               value={formData.gender}
               onChange={handleInputChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md"
+              className="w-full px-4 py-2 text-black border border-gray-300 rounded-md"
             >
               <option value="">Select Gender</option>
               <option value="Male">Male</option>

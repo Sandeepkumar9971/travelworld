@@ -51,17 +51,17 @@ const LoginModal = ({ onClose,setIsRegisterModalOpen }) => {
 
   return (
     <div className="fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center z-50">
-      <div className="bg-[#424242]  shadow-lg w-full max-w-lg p-6 relative text-white">
-        <h2 className="text-2xl font-bold mb-4">Login</h2>
+      <div className="bg-[#424242]  shadow-lg w-full max-w-lg p-6 relative ">
+        <h2 className="text-2xl font-bold mb-4 text-white">Login</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
-            <label className="block text-sm font-medium mb-2">Email</label>
+            <label className="block text-sm font-medium mb-2 text-white">Email</label>
             <input
               type="email"
               name="email"
               value={formData.email}
               onChange={handleInputChange}
-              className={`w-full px-4 py-2 border ${
+              className={`w-full px-4 py-2 border text-black ${
                 errors.email ? "border-red-500" : "border-gray-300"
               } rounded-md`}
               required
@@ -71,13 +71,13 @@ const LoginModal = ({ onClose,setIsRegisterModalOpen }) => {
             )}
           </div>
           <div className="mb-4">
-            <label className="block text-sm font-medium mb-2">Password</label>
+            <label className="block text-sm font-medium mb-2 text-white ">Password</label>
             <input
               type="password"
               name="password"
               value={formData.password}
               onChange={handleInputChange}
-              className={`w-full px-4 py-2 border ${
+              className={`w-full px-4 py-2 border text-black  ${
                 errors.password ? "border-red-500" : "border-gray-300"
               } rounded-md`}
               required
